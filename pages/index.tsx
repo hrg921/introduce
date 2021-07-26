@@ -4,6 +4,7 @@ import { NotionAPI } from 'notion-client';
 import { ExtendedRecordMap } from 'notion-types'
 import { NotionRenderer } from 'react-notion-x';
 import { HOME_NOTION_URL } from '../constants';
+import { GetServerSidePropsContext } from 'next';
 
 const notion = new NotionAPI();
 
@@ -17,7 +18,7 @@ export default function Home({ recordMap }: Props) {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const recordMap = await notion.getPage(HOME_NOTION_URL);
 
   return {
