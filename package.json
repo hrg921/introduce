@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
     "next": "11.0.1",
     "notion-client": "^4.7.9",
     "notion-types": "^4.7.9",
@@ -20,6 +22,7 @@
     "@types/react": "17.0.15",
     "eslint": "7.31.0",
     "eslint-config-next": "11.0.1",
+    "prettier": "^2.3.2",
     "typescript": "4.3.5"
   }
 }
