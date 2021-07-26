@@ -3,7 +3,7 @@ import 'react-notion-x/src/styles.css'
 import { NotionAPI } from 'notion-client';
 import { ExtendedRecordMap } from 'notion-types'
 import { NotionRenderer } from 'react-notion-x';
-import { HOME_NOTION_URL } from './constants';
+import { HOME_NOTION_URL } from '../constants';
 
 const notion = new NotionAPI();
 
