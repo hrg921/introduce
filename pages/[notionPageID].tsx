@@ -34,6 +34,7 @@ export default function Home({ recordMap }: Props) {
 export const getServerSideProps = async ({
   params,
 }: GetServerSidePropsContext) => {
+  // TODO: 모든 페이지 아이디가 아닌 특정 DB 에서 가져오도록 한다.
   const pageID = params?.["notionPageID"] ?? "";
   const recordMap = await notion.getPage(`${NOTION_URL_PREFIX}/${pageID}`);
 
